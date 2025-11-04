@@ -158,7 +158,7 @@ XTerm.vt100.selectToClipboard: true
 ! URxvt.keysym.M-v:         perl:clipboard:paste
 ! URxvt.keysym.M-C-v:       perl:clipboard:paste_escaped
 URxvt.clipboard.autocopy: true  ! sync primary and clipboard buffers
-URxvt.geometry:           140x24
+URxvt.geometry:           200x48
 URxvt.secondaryScreen:    1
 URxvt.secondaryScroll:    0
 URxvt.secondaryWheel:     1

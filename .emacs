@@ -37,9 +37,9 @@
  '(custom-enabled-themes '(tango-dark))
  '(custom-safe-themes
    '("5176e50a0a12093932560ae04c687d7bd33a92fb261d538754fb426b429c2638" default))
+ '(global-display-line-numbers-mode t)
  '(ispell-dictionary nil)
- '(menu-bar-mode nil)
- '(show-paren-mode t))
+ '(menu-bar-mode nil))
 
 (set-face-foreground 'mode-line "#EEEEEE")
 (set-face-foreground 'mode-line-inactive "#BBBBBB")
