@@ -2,6 +2,8 @@
 (setq custom-tab-width 4)
 (defvaralias 'c-basic-offset 'tab-width)
 (setq backward-delete-char-untabify-method 'hungry)
+(setq scroll-step            1
+      scroll-conservatively  10000)
 
 (defun disable-tabs () (setq indent-tabs-mode nil))
 (defun enable-tabs  ()
@@ -34,10 +36,10 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["black" "red3" "ForestGreen" "yellow3" "blue" "magenta3" "DeepSkyBlue" "gray50"])
+ '(column-number-mode t)
  '(custom-enabled-themes '(tango-dark))
  '(custom-safe-themes
    '("5176e50a0a12093932560ae04c687d7bd33a92fb261d538754fb426b429c2638" default))
- '(global-display-line-numbers-mode t)
  '(ispell-dictionary nil)
  '(menu-bar-mode nil))
 
@@ -56,3 +58,19 @@
 
 ;;(add-to-list 'default-frame-alist '(foreground-color . "#FFFFFF"))
 ;;(add-to-list 'default-frame-alist '(background-color . "#000000"))
+
+
+
+
+
+
+;; Fix Shift + Arrow keys inside tmux
+(when (not (display-graphic-p))
+  (let ((xterm-keys
+         '(("\e[1;2A" . [S-up])
+           ("\e[1;2B" . [S-down])
+           ("\e[1;2C" . [S-right])
+           ("\e[1;2D" . [S-left]))))
+    (dolist (k xterm-keys)
+      (define-key input-decode-map (car k) (cdr k)))))
+

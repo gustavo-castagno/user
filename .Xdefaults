@@ -172,15 +172,15 @@ URxvt*scrollWithBuffer:   true
 URxvt*scrollTtyKeypress:  true
 URxvt.font:     xft:monospace:size=12:antialias=true
 URxvt.boldFont: xft:monospace:bold:size=12:antialias=true
-!URxvt.font:     xft:bitstream vera sans mono:size=12:antialias=true
-!URxvt.boldFont: xft:bitstream vera sans mono:bold:size=12:antialias=true
+! URxvt.font:     xft:bitstream vera sans mono:size=12:antialias=true
+! URxvt.boldFont: xft:bitstream vera sans mono:bold:size=12:antialias=true
 URxvt.letterSpace : -2 ! Put characters slightly closer together
-!URxvt.termName : rxvt-unicode-256color
-!Urxvt*termName:  screen-256color
+! URxvt.termName : rxvt-unicode-256color
+! Urxvt*termName:  screen-256color
 URxvt.iso14755 :   false
 URxvt.iso14755_52: false
 URxvt*depth: 32
-URxvt*background:  rgba:0000/0000/0000/BB00
+URxvt*background:  rgba:2200/2200/2200/BB00
 
 
 ! transparency in i3
