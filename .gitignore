@@ -5,6 +5,7 @@
 !.gitignore
 !.gitmodules
 !.Xdefaults
+!.bashrc
 !.emacs
 
 !/.config
@@ -17,4 +18,13 @@
 !/.config/picom
 /.config/picom/*
 !/.config/picom/picom.conf
+
+!/.config/tmux
+/.config/tmux/*
+!/.config/tmux/tmux.conf
+
+!/.config/kitty
+/.config/kitty/*
+!/.config/kitty/kitty.conf
+!/.config/kitty/current-theme.conf
 
